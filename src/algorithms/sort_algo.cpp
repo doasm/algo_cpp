@@ -4,13 +4,13 @@
 
 namespace doasm
 {
-    inline sort_algo_type SortAlgo::change_sort_algo(sort_algo_type algo_type)
+    sort_algo_type SortAlgo::change_sort_algo(sort_algo_type algo_type)
     {
         this->type = algo_type;
         return algo_type;
     }
 
-    inline void SortAlgo::sort(int *array, int size)
+    void SortAlgo::sort(int *array, int size)
     {
         switch (this->type)
         {
@@ -20,7 +20,7 @@ namespace doasm
         default:
             break;
         }
-    };
+    }
 
     void SortAlgo::insertSort(int *array, int size)
     {

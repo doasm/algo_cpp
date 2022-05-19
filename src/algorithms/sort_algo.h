@@ -17,8 +17,8 @@ namespace doasm
     public:
         SortAlgo(sort_algo_type algo_type) : type(algo_type) {}
         ~SortAlgo() {}
-        inline sort_algo_type change_sort_algo(sort_algo_type algo_type);
-        inline void sort(int *, int);
+        sort_algo_type change_sort_algo(sort_algo_type algo_type);
+        void sort(int *, int);
     };
 }
 
